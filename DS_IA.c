@@ -51,13 +51,13 @@ int insert(int x,int position) //function to insert an element at specified posi
     }
     else   //enter the element at the specified position by reshuffling the link
     {
-    p=start;
-    for(i=1;i<position-1;i++)
-    {
-        p=p->next;
-    }
-    ptr->next=p->next;
-    p->next=ptr;
+      p=start;
+      for(i=1;i<position-1;i++)
+      {
+          p=p->next;
+      }
+      ptr->next=p->next;
+      p->next=ptr;
     }
     count++;
     return 1;
